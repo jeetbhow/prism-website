@@ -25,3 +25,21 @@
 .nav-item {
   @apply cursor-pointer text-sm font-medium text-zinc-100 duration-200 hover:text-red-500;
 }
+
+.price-card {
+  @apply w-96 flex-col space-y-4 rounded-sm bg-zinc-800 p-10 shadow-lg;
+}
+
+.price-card.flex {
+  animation: fade-in 300ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
