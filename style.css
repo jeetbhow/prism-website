@@ -11,7 +11,7 @@
 }
 
 .testimonial-card {
-  @apply rounded bg-zinc-800 p-8 shadow-lg;
+  @apply flex flex-col justify-center rounded bg-zinc-800 p-8 shadow-lg;
 }
 
 .pricing-tab {
