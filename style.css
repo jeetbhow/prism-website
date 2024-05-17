@@ -21,3 +21,7 @@
 .pricing-tab[active] {
   @apply border-b border-red-500 text-red-500;
 }
+
+.nav-item {
+  @apply cursor-pointer text-sm font-medium text-zinc-100 duration-200 hover:text-red-500;
+}

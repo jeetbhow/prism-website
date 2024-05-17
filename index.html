@@ -14,6 +14,28 @@
     <title>Prism</title>
   </head>
   <body class="font-os bg-zinc-900">
+    <header>
+      <div class="container mx-auto px-16 py-8">
+        <!-- Logo -->
+        <div class="flex flex-row items-center space-x-8">
+          <div class="flex flex-row items-center space-x-4">
+            <img src="logo-white.svg" alt="" width="40" />
+            <p class="text-xl font-medium text-stone-200">Prism</p>
+          </div>
+
+          <nav>
+            <ul class="flex flex-row items-center space-x-4">
+              <li class="nav-item">Features</li>
+              <li class="nav-item">Pricing</li>
+              <li class="nav-item">Testimonials</li>
+              <li class="nav-item">Login</li>
+              <li class="nav-item">Register</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
     <section id="hero">
       <div class="section-container">
         <div class="flex items-center justify-between">
@@ -23,7 +45,7 @@
             </h1>
             <h2 class="text-4xl font-semibold text-zinc-200">Subheading</h2>
             <button
-              class="max-w-xs rounded-sm bg-blue-500 p-3 font-semibold text-slate-100 duration-200 hover:bg-blue-300"
+              class="max-w-xs rounded-sm bg-red-500 p-3 font-semibold text-slate-100 duration-200 hover:bg-red-300"
             >
               Start your free trial
             </button>
@@ -85,7 +107,7 @@
         <div class="my-8 grid grid-cols-3 gap-4">
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
@@ -94,7 +116,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
@@ -103,7 +125,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
@@ -112,7 +134,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
@@ -121,7 +143,7 @@
           </div>
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
@@ -130,11 +152,65 @@
           </div>
           <div class="feature-card">
             <h3 class="text-2xl font-semibold text-red-500">Feature</h3>
-            <p class="text-sm text-zinc-200">
+            <p class="text-zinc-200">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
               enim laborum alias totam itaque nemo ab officiis animi aliquam
               tenetur mollitia eius dolores tempore, corporis ratione,
               consequuntur necessitatibus quos blanditiis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="section-container">
+        <!-- Pricing Heading -->
+        <div class="mb-20 flex flex-col space-y-6">
+          <p class="text-xl font-semibold uppercase text-red-600">Pricing</p>
+          <h1 class="text-5xl font-bold text-zinc-100">Main Heading</h1>
+          <h3 class="text-2xl font-semibold text-zinc-200">Subheading</h3>
+        </div>
+
+        <!-- Pricing Tabs -->
+        <div class="flex space-x-96">
+          <div class="flex flex-col items-start space-y-8">
+            <p class="pricing-tab" active>Personal</p>
+            <p class="pricing-tab">Basic</p>
+            <p class="pricing-tab">Premium</p>
+            <p class="pricing-tab">Professional</p>
+            <p class="pricing-tab">Enterprise</p>
+          </div>
+          <div
+            class="flex w-96 flex-col space-y-4 rounded-sm bg-zinc-800 p-10 shadow-lg"
+          >
+            <h1 class="text-center text-4xl font-bold text-stone-300">
+              $0/month
+            </h1>
+            <h2
+              class="border-b border-stone-500 pb-3 text-center text-lg font-medium text-stone-300"
+            >
+              Get started with essential features for basic expense tracking and
+              budget creation. Perfect for individuals new to financial
+              management.
+            </h2>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Basic expense tracking
+            </p>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Budget creation
+            </p>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Goal setting
+            </p>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Reports and Summaries
+            </p>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Limited account connections (up to 2 accounts)
+            </p>
+            <p class="text-center text-lg font-medium text-stone-300">
+              Community support
             </p>
           </div>
         </div>
@@ -188,34 +264,6 @@
               </p>
             </div>
             <img src="desktop.png" width="600" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing">
-      <div class="section-container">
-        <!-- Pricing Heading -->
-        <div class="mb-20 flex flex-col space-y-6">
-          <p class="text-xl font-semibold uppercase text-red-600">Pricing</p>
-          <h1 class="text-5xl font-bold text-zinc-100">Main Heading</h1>
-          <h3 class="text-2xl font-semibold text-zinc-200">Subheading</h3>
-        </div>
-
-        <!-- Pricing Tabs -->
-        <div class="flex space-x-96">
-          <div class="flex flex-col items-start space-y-8">
-            <p class="pricing-tab" active>Pricing plan</p>
-            <p class="pricing-tab">Pricing plan</p>
-            <p class="pricing-tab">Pricing plan</p>
-            <p class="pricing-tab">Pricing plan</p>
-          </div>
-          <div
-            class="w-96 rounded-sm border border-white bg-zinc-800 p-10 shadow-lg"
-          >
-            <h1 class="text-center text-4xl font-bold text-stone-300">
-              Content
-            </h1>
           </div>
         </div>
       </div>
