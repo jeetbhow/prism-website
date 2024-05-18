@@ -42,6 +42,26 @@
   @apply flex flex-col-reverse items-center justify-center lg:flex-row lg:space-x-10;
 }
 
+#hamburger {
+  @apply flex h-[32px] w-[32px] cursor-pointer flex-col justify-center space-y-2 md:hidden;
+}
+
+.hb-line {
+  @apply h-[2px] w-[32px] bg-zinc-100 duration-200;
+}
+
+#hamburger[active] .hb-line.top {
+  @apply translate-y-1.5 rotate-45 transform;
+}
+
+#hamburger[active] .hb-line.bot {
+  @apply -translate-y-1 -rotate-45 transform;
+}
+
+#hamburger[active] .hb-line.mid {
+  @apply hidden;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

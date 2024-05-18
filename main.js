@@ -7,6 +7,13 @@ AOS.init();
 // const hamburgerMenu = document.getElementById("hamburger");
 const pricingTabs = document.querySelectorAll(".pricing-tab");
 const priceCards = document.querySelectorAll(".price-card");
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", (e) => {
+  hamburger.toggleAttribute("active");
+  const menu = document.querySelector("nav");
+  menu.classList.toggle("hidden");
+});
 
 pricingTabs.forEach((tab) =>
   tab.addEventListener("click", handlePriceTabClick),
