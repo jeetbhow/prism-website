@@ -23,7 +23,7 @@
             <p class="text-xl font-medium text-stone-200">Prism</p>
           </div>
 
-          <nav>
+          <nav class="hidden md:block">
             <ul class="flex flex-row items-center space-x-4">
               <li class="nav-item">Features</li>
               <li class="nav-item">Pricing</li>
@@ -38,13 +38,19 @@
 
     <section id="hero">
       <div class="section-container">
-        <div class="flex items-center justify-between">
-          <div class="flex flex-col space-y-8">
-            <h1 class="text-6xl font-bold text-zinc-100 shadow-sm">
+        <div
+          class="flex flex-col-reverse items-center lg:flex-row lg:space-y-10"
+        >
+          <div class="flex flex-col items-center space-y-8 md:items-start">
+            <h1
+              class="text-center text-6xl font-bold text-zinc-100 shadow-sm md:text-left"
+            >
               Your ultimate
               <span class="text-red-500">financial companion</span>
             </h1>
-            <h2 class="text-4xl font-semibold text-zinc-200">
+            <h2
+              class="text-center text-4xl font-semibold text-zinc-200 md:text-start"
+            >
               Unlock powerful tools to simplify your money management
             </h2>
             <button
@@ -55,44 +61,47 @@
           </div>
           <img src="hero.png" width="700" />
         </div>
-        <!-- Extra points -->
-        <div class="my-10 flex justify-between text-center">
-          <div class="flex max-w-md flex-col space-y-4">
-            <h3 class="text-2xl font-semibold text-zinc-100">
-              Smart and simple
-            </h3>
-            <p class="text-lg text-zinc-200">
-              Effortlessly manage your finances with our intuitive interface and
-              automated tracking features.
-            </p>
-            <p class="cursor-pointer text-sm font-light text-red-400">
-              Read more
-            </p>
-          </div>
-          <div class="flex max-w-md flex-col space-y-4">
-            <h3 class="text-2xl font-semibold text-zinc-100">
-              Insightful analytics
-            </h3>
-            <p class="text-lg text-zinc-200">
-              Gain valuable insights into your spending habits and financial
-              health with personalized reports and AI-driven recommendations.
-            </p>
-            <p class="cursor-pointer text-sm font-light text-red-400">
-              Read more
-            </p>
-          </div>
-          <div class="flex max-w-md flex-col space-y-4">
-            <h3 class="text-2xl font-semibold text-zinc-100">
-              Flexible pricing plans
-            </h3>
-            <p class="text-lg text-zinc-200">
-              Choose a plan that fits your needs and budget, from free basic
-              features to comprehensive professional tools.
-            </p>
-            <p class="cursor-pointer text-sm font-light text-red-400">
-              Read more
-            </p>
-          </div>
+      </div>
+    </section>
+
+    <!-- Extra points -->
+    <section id="hero-extra">
+      <div
+        class="container mx-auto flex flex-col space-y-8 px-8 text-center md:flex-row md:space-y-0"
+      >
+        <div class="flex flex-col space-y-4">
+          <h3 class="text-2xl font-semibold text-zinc-100">Smart and simple</h3>
+          <p class="text-lg text-zinc-200">
+            Effortlessly manage your finances with our intuitive interface and
+            automated tracking features.
+          </p>
+          <p class="cursor-pointer text-sm font-light text-red-400">
+            Read more
+          </p>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <h3 class="text-2xl font-semibold text-zinc-100">
+            Insightful analytics
+          </h3>
+          <p class="text-lg text-zinc-200">
+            Gain valuable insights into your spending habits and financial
+            health with personalized reports and AI-driven recommendations.
+          </p>
+          <p class="cursor-pointer text-sm font-light text-red-400">
+            Read more
+          </p>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <h3 class="text-2xl font-semibold text-zinc-100">
+            Flexible pricing plans
+          </h3>
+          <p class="text-lg text-zinc-200">
+            Choose a plan that fits your needs and budget, from free basic
+            features to comprehensive professional tools.
+          </p>
+          <p class="cursor-pointer text-sm font-light text-red-400">
+            Read more
+          </p>
         </div>
       </div>
     </section>
@@ -111,7 +120,7 @@
         </div>
 
         <!-- Features Grid -->
-        <div class="my-8 grid grid-cols-3 gap-4">
+        <div class="my-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <div class="feature-card">
             <img src="expenses.svg" alt="" width="64" />
             <h3 class="text-2xl font-semibold text-red-500">
@@ -186,7 +195,9 @@
         </div>
 
         <!-- Pricing Tabs -->
-        <div class="flex flex-row items-center space-x-96">
+        <div
+          class="flex flex-col items-center space-y-10 md:flex-row md:items-start md:justify-between"
+        >
           <div class="flex flex-col items-start space-y-8">
             <p class="pricing-tab" active key="personal">Personal</p>
             <p class="pricing-tab" key="basic">Basic</p>
@@ -366,20 +377,26 @@
       <div class="section-container">
         <!-- Get started heading -->
         <div class="flex flex-col items-center space-y-6">
-          <h3 class="text-2xl font-medium text-zinc-300">
+          <h3
+            class="text-center text-2xl font-medium text-zinc-300 md:text-left"
+          >
             Get started right away
           </h3>
-          <h4 class="text-4xl font-bold text-red-500">Effortless onboarding</h4>
+          <h4 class="text-center text-4xl font-bold text-red-500 md:text-left">
+            Effortless onboarding
+          </h4>
         </div>
 
         <!-- Main Content -->
         <div class="flex flex-col space-y-24">
-          <div class="mt-16 flex items-center justify-center space-x-10">
+          <div class="onboarding-card-reverse">
             <div class="flex max-w-lg flex-col space-y-8">
-              <h1 class="text-4xl font-bold text-stone-200">
+              <h1
+                class="text-center text-4xl font-bold text-stone-200 md:text-left"
+              >
                 Track Your Spending
               </h1>
-              <p class="text-lg text-stone-300">
+              <p class="text-center text-lg text-stone-300 md:text-left">
                 Automatically track your expenses in real-time. Categorized
                 transactions give you a clear view of where your money is going.
               </p>
@@ -393,13 +410,13 @@
             >
             </lottie-player>
           </div>
-          <div class="mt-16 flex items-center justify-center space-x-10">
+          <div class="onboarding-card">
             <lottie-player
               autoplay
               loop
               mode="normal"
               src="https://lottie.host/4349c950-f551-4dc0-be4c-576680532fcd/JDRisOKCxT.json"
-              style="width: 600px"
+              style="width: 500px"
             >
             </lottie-player>
             <div class="flex max-w-lg flex-col space-y-8">
@@ -413,7 +430,7 @@
               </p>
             </div>
           </div>
-          <div class="mt-16 flex items-center justify-center space-x-10">
+          <div class="onboarding-card-reverse">
             <div class="flex max-w-lg flex-col space-y-8">
               <h1 class="text-4xl font-bold text-stone-200">
                 Set Financial Goals
@@ -429,17 +446,17 @@
               loop
               mode="normal"
               src="https://lottie.host/aa6759d3-0845-49ef-b5da-63cceb9ddf50/Lb6g4raVe1.json"
-              style="width: 600px"
+              style="width: 500px"
             >
             </lottie-player>
           </div>
-          <div class="mt-16 flex items-center justify-center space-x-10">
+          <div class="onboarding-card">
             <lottie-player
               autoplay
               loop
               mode="normal"
-              src="https://lottie.host/8bc1c8b0-b9f4-45b2-84ce-5f83d9326960/pcERZQclEt.json"
-              style="width: 600px"
+              src="https://lottie.host/bee81e5e-cb45-4e8b-a618-2a6c2bb21f57/Aij3Te4Z6Y.json"
+              style="width: 300px"
             >
             </lottie-player>
             <div class="flex max-w-lg flex-col space-y-8">
@@ -457,7 +474,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="testimonials">
       <div class="section-container">
         <!-- Testimonials Heading -->
         <div
@@ -472,7 +489,9 @@
         </div>
 
         <!-- Testimonial Cards -->
-        <div class="my-10 flex justify-center space-x-6">
+        <div
+          class="my-10 flex flex-col justify-center space-y-8 md:flex-row md:space-x-6 md:space-y-0"
+        >
           <div class="testimonial-card">
             <p
               class="border-b border-stone-500 pb-4 font-medium text-stone-400"
@@ -511,24 +530,30 @@
 
     <!-- Newsletter -->
     <section>
-      <div class="container mx-auto px-44 py-16">
-        <div class="flex flex-row items-center rounded bg-red-500 p-10">
-          <div class="mr-32 flex flex-col space-y-2">
+      <div class="container mx-auto px-8 py-16 lg:px-44">
+        <div
+          class="flex flex-col space-y-6 rounded bg-red-500 p-8 md:flex-row md:items-center md:justify-center md:space-x-32"
+        >
+          <div class="flex flex-col space-y-2 text-center md:text-left">
             <h3 class="text-4xl font-bold text-zinc-100">Stay up to date</h3>
             <p class="text-lg font-medium text-zinc-200">
               Sign up for our newsletter to get the latest developments
             </p>
           </div>
-          <input
-            type="text"
-            placeholder="Your email"
-            class="h-0.5 w-full rounded bg-red-800 p-3 py-6 placeholder:text-slate-200"
-          />
-          <button
-            class="mx-4 rounded bg-slate-200 p-3 px-4 font-medium text-red-600 shadow-md"
+          <div
+            class="flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0"
           >
-            Subscribe
-          </button>
+            <input
+              type="text"
+              placeholder="Your email"
+              class="h-0.5 rounded bg-red-800 p-3 py-6 placeholder:text-slate-200"
+            />
+            <button
+              class="rounded bg-slate-200 p-3 font-medium text-red-600 shadow-md"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section-container {
-  @apply container mx-auto px-16 py-32;
+  @apply container mx-auto px-8 py-32;
 }
 
 .feature-card {
@@ -27,11 +27,19 @@
 }
 
 .price-card {
-  @apply w-96 flex-col space-y-4 rounded-sm bg-zinc-800 p-10 shadow-lg;
+  @apply w-96 flex-col space-y-4 rounded-sm bg-zinc-800 p-10 shadow-lg lg:mx-auto;
 }
 
 .price-card.flex {
   animation: fade-in 300ms;
+}
+
+.onboarding-card {
+  @apply flex flex-col items-center justify-center lg:flex-row lg:space-x-10;
+}
+
+.onboarding-card-reverse {
+  @apply flex flex-col-reverse items-center justify-center lg:flex-row lg:space-x-10;
 }
 
 @keyframes fade-in {
